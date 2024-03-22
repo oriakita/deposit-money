@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ứng dụng tài chính</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2 class="time-title">Thời gian hiện tại:</h2>
+    <h1 class="time-value" id="current-time-display">Loading...</h1>
+    <button type="button" id="btn-set-future">Nhảy đến tương lai</button>
+    
+    <table id="customer-table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Deposit</th>
+                <th>Balance</th>
+                <th>Created at</th>
+                <th>Can withdraw at</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="deposit">
+        <label for="cname">Customer name:</label>
+        <input type="text" id="cname" name="cname" placeholder="Văn A"><br>
+        <label for="deposit-amount">Deposit amount:</label>
+        <input type="number" id="deposit-amount" name="deposit-amount" placeholder="1000000" min="0"><br>
+        <button type="button" id="btn-submit-deposit">Deposit</button>
+    </div>
+
+    <div class="modal" id="modal-set-future">
+        <div class="select-time">
+            <input type="number" id="input-time" min="0" max="1000" step="1" />
+            <select id="select-format-time">
+                <option value="hour">Giờ</option>
+                <option value="day">Ngày</option>
+                <option value="week">Tuần</option>
+                <option value="month">Tháng</option>
+            </select>
+            <span>sau</span>
+        </div>
+        <div class="buttons">
+            <button type="button" id="btn-cancel-future">Cancel</button>
+            <button type="button" id="btn-submit-future">Ok</button>
+        </div>
+    </div>
+</body>
+</html>

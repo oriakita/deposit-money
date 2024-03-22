@@ -1,0 +1,78 @@
+button {
+    cursor: pointer;
+}
+
+.time-title {
+    text-align: center;
+}
+
+.time-value {
+    text-align: center;
+}
+
+.text-danger {
+    color: red;
+}
+
+.text-success {
+    color: green;
+}
+
+#btn-set-future {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border: unset;
+    background-color: unset;
+    color: blue;
+}
+
+#btn-set-future:hover {
+    text-decoration: underline;
+}
+
+#btn-deposit {
+    margin-bottom: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.deposit {
+    width: max-content;
+    margin-top: 10px;
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius: 10px;
+}
+
+.modal {
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: calc(50vw - 150px);
+    background-color: white;
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius: 10px;
+}
+
+#btn-submit-future {
+    margin-top: 10px;
+}
